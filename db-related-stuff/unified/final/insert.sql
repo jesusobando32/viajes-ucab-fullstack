@@ -161,7 +161,7 @@ INSERT INTO tasa_de_cambio (tas_cam_tasa_valor, tas_cam_fecha_hora_inicio, tas_c
 (274.00, '2025-11-05 10:30:00', 'BS'),
 (0.85, '2025-11-15 14:00:00', 'EUR'),
 (156.20, '2025-11-01 09:00:00', 'YEN'),
-(0.74, '2025-11-12 11:00:00', 'GBP'),
+(0.74, '2025-11-12 11:00:00', 'GBP');
 
 -- Tasas viejas lol
 INSERT INTO tasa_de_cambio (tas_cam_tasa_valor, tas_cam_fecha_hora_inicio, tas_cam_moneda, tas_cam_fecha_hora_fin) VALUES
@@ -169,7 +169,7 @@ INSERT INTO tasa_de_cambio (tas_cam_tasa_valor, tas_cam_fecha_hora_inicio, tas_c
 (274.00, '2025-11-05 10:30:00', 'BS', '2025-11-05 10:30:01'),
 (0.85, '2025-11-15 14:00:00', 'EUR', '2025-11-15 14:00:01'),
 (156.20, '2025-11-01 09:00:00', 'YEN', '2025-11-01 09:00:01'),
-(0.74, '2025-11-12 11:00:00', 'GBP', '2025-11-12 11:00:01'),
+(0.74, '2025-11-12 11:00:00', 'GBP', '2025-11-12 11:00:01');
 
 
 -- Actualizar fechas fin (simulación de historización)
@@ -1501,7 +1501,7 @@ INSERT INTO compensacion (com_co2_compensado, com_monto_agregado, fk_compra) VAL
 
 -- 48. RESENA (10 registros, asociados a los primeros 10 detalles de reserva)
 -- fk_detalle_reserva (fk_compra: 1-5, det_res_codigo: 1-2)
-INSERT INTO resena (res_calificacion_numerica, res_descripcion, res_fecha_hota_creacion, fk_detalle_reserva, fk_detalle_reserva_2) VALUES
+INSERT INTO resena (res_calificacion_numerica, res_descripcion, res_fecha_hora_creacion, fk_detalle_reserva, fk_detalle_reserva_2) VALUES
 (5, 'Excelente servicio de vuelo y hotel. Recomendado!', '2026-01-20 10:00:00', 1, 1),
 (4, 'Buen tour, aunque el vuelo se retrasó 15 min.', '2026-01-21 11:00:00', 2, 1),
 (5, 'Hotel muy cómodo, la habitación era perfecta.', '2026-01-22 12:00:00', 3, 1),

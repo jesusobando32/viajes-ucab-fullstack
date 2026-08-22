@@ -115,7 +115,7 @@ const handleLogin = async () => {
         }
     } catch (error) {
         console.error(error);
-        errorMessage.value = 'Error de conexión con el servidor';
+        errorMessage.value = 'Error simulado';
     } finally {
         isLoading.value = false;
     }
